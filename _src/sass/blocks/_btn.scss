@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: $color-primary;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 18px;
+
+  transition:
+    background-color $transition,
+    transform $transition;
+
+  &:hover {
+    background-color: $color-primary-hover;
+    transform: translateY(-3px);
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 8px 22px;
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: 16px;
+  }
+}
